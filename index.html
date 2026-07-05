@@ -1,0 +1,195 @@
+<!-- =========================
+FILE 1: index.html
+========================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Raphchat</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+body { margin:0; font-family:Inter; }
+
+nav {
+  display:flex;
+  justify-content:space-between;
+  padding:15px 40px;
+  background:#fff;
+  box-shadow:0 2px 10px rgba(0,0,0,0.05);
+}
+
+nav a {
+  margin-left:15px;
+  text-decoration:none;
+  color:#1E5EFF;
+  font-weight:500;
+}
+
+.hero {
+  padding:90px 40px;
+  background:#EAF2FF;
+}
+
+.hero h1 { font-size:48px; }
+
+.btn {
+  padding:10px 15px;
+  border:none;
+  cursor:pointer;
+  border-radius:6px;
+}
+
+.primary { background:#1E5EFF; color:white; }
+
+.features {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:15px;
+  padding:40px;
+}
+
+.card {
+  padding:20px;
+  border-radius:10px;
+  box-shadow:0 2px 10px rgba(0,0,0,0.1);
+  text-align:center;
+}
+
+footer {
+  text-align:center;
+  padding:20px;
+  color:#777;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div><b style="color:#1E5EFF;">Raphchat</b></div>
+  <div>
+    <a href="./index.html">Home</a>
+    <a href="./about.html">About</a>
+    <a href="./contact.html">Contact</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <h1>Connect. Chat. Grow Together.</h1>
+  <p>A safe and modern platform for positive community connection.</p>
+  <button class="btn primary">Get Started</button>
+</section>
+
+<section class="features">
+  <div class="card">💬 Chat</div>
+  <div class="card">🤝 Community</div>
+  <div class="card">🔒 Safe Space</div>
+  <div class="card">🌍 Global</div>
+</section>
+
+<footer>
+  © 2026 Raphchat
+</footer>
+
+</body>
+</html>
+
+
+<!-- =========================
+FILE 2: about.html
+========================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+body { font-family:Inter; padding:40px; }
+
+a {
+  color:#1E5EFF;
+  text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+
+<h1 style="color:#1E5EFF;">About Raphchat</h1>
+
+<p>
+Raphchat is a safe communication platform built to help people connect, share, and grow in a positive environment.
+</p>
+
+<br>
+
+<a href="./index.html">← Back Home</a>
+
+</body>
+</html>
+
+
+<!-- =========================
+FILE 3: contact.html
+========================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+body { font-family:Inter; padding:40px; }
+
+input, textarea {
+  width:100%;
+  padding:10px;
+  margin:10px 0;
+  border:1px solid #ccc;
+  border-radius:6px;
+}
+
+button {
+  background:#1E5EFF;
+  color:white;
+  padding:10px 15px;
+  border:none;
+  cursor:pointer;
+  border-radius:6px;
+}
+
+a {
+  color:#1E5EFF;
+  text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+
+<h1 style="color:#1E5EFF;">Contact Us</h1>
+
+<p>Email: helloraphchat@gmail.com</p>
+
+<form onsubmit="alert('Message sent!'); return false;">
+  <input type="text" placeholder="Your Name" required>
+  <textarea placeholder="Your Message" required></textarea>
+  <button type="submit">Send</button>
+</form>
+
+<br>
+
+<a href="./index.html">← Back Home</a>
+
+</body>
+</html>
